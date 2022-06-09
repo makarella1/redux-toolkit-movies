@@ -1,0 +1,12 @@
+@import './common/reset.scss';
+@import './common/colors.scss';
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $primary;
+  overflow-x: hidden;
+}

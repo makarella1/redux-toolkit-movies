@@ -1,0 +1,81 @@
+@import '../../common/colors.scss';
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 0;
+  font-weight: 400;
+
+  &__summary {
+    flex: 60%;
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  &__rating {
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+    color: $text-secondary;
+
+    span {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
+  }
+
+  &__plot {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &__info {
+    margin-top: 20px;
+  }
+
+  &__info > div span:first-child {
+    color: $text-primary;
+    padding: 10px 0;
+    font-weight: 600;
+    width: 100px;
+    display: inline-block;
+  }
+
+  &__info > div span {
+    color: $text-secondary;
+  }
+}
+
+@media (max-width: 768px) {
+  .details {
+    flex-direction: column;
+    text-align: center;
+
+    &__summary {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .details {
+    &__rating {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
